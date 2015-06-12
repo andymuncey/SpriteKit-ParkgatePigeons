@@ -42,6 +42,8 @@ class GameViewController: UIViewController {
             /* Set the scale mode to scale to fit the window */
             scene.scaleMode = .AspectFill
             
+            scene.size = skView.frame.size
+            
             skView.presentScene(scene)
         }
     }
@@ -51,11 +53,9 @@ class GameViewController: UIViewController {
     }
 
     override func supportedInterfaceOrientations() -> Int {
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return Int(UIInterfaceOrientationMask.AllButUpsideDown.rawValue)
-        } else {
-            return Int(UIInterfaceOrientationMask.All.rawValue)
-        }
+       
+            return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+      
     }
 
     override func didReceiveMemoryWarning() {

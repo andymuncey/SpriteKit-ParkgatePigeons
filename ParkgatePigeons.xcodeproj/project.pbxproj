@@ -15,6 +15,12 @@
 		BB1AD9661B2AF60100ED924B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1AD9651B2AF60100ED924B /* Images.xcassets */; };
 		BB1AD9691B2AF60100ED924B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1AD9671B2AF60100ED924B /* LaunchScreen.xib */; };
 		BB1AD9751B2AF60100ED924B /* ParkgatePigeonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1AD9741B2AF60100ED924B /* ParkgatePigeonsTests.swift */; };
+		BB1AD97F1B2AF64500ED924B /* Pigeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1AD97E1B2AF64500ED924B /* Pigeon.swift */; };
+		BB1AD9821B2B04B500ED924B /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = BB1AD9801B2B04B500ED924B /* background.png */; };
+		BB1AD9831B2B04B500ED924B /* pigeon-alive.png in Resources */ = {isa = PBXBuildFile; fileRef = BB1AD9811B2B04B500ED924B /* pigeon-alive.png */; };
+		BB1AD9861B2B12CF00ED924B /* pigeon-dead-anim1.png in Resources */ = {isa = PBXBuildFile; fileRef = BB1AD9841B2B12CF00ED924B /* pigeon-dead-anim1.png */; };
+		BB1AD9871B2B12CF00ED924B /* pigeon-dead-anim2.png in Resources */ = {isa = PBXBuildFile; fileRef = BB1AD9851B2B12CF00ED924B /* pigeon-dead-anim2.png */; };
+		BB1AD9891B2B25EC00ED924B /* pigeon-alive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB1AD9881B2B25EC00ED924B /* pigeon-alive@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,12 @@
 		BB1AD96E1B2AF60100ED924B /* ParkgatePigeonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkgatePigeonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1AD9731B2AF60100ED924B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB1AD9741B2AF60100ED924B /* ParkgatePigeonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkgatePigeonsTests.swift; sourceTree = "<group>"; };
+		BB1AD97E1B2AF64500ED924B /* Pigeon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pigeon.swift; sourceTree = "<group>"; };
+		BB1AD9801B2B04B500ED924B /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		BB1AD9811B2B04B500ED924B /* pigeon-alive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pigeon-alive.png"; sourceTree = "<group>"; };
+		BB1AD9841B2B12CF00ED924B /* pigeon-dead-anim1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pigeon-dead-anim1.png"; sourceTree = "<group>"; };
+		BB1AD9851B2B12CF00ED924B /* pigeon-dead-anim2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pigeon-dead-anim2.png"; sourceTree = "<group>"; };
+		BB1AD9881B2B25EC00ED924B /* pigeon-alive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pigeon-alive@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,7 @@
 		BB1AD94C1B2AF5FF00ED924B = {
 			isa = PBXGroup;
 			children = (
+				BB1AD97E1B2AF64500ED924B /* Pigeon.swift */,
 				BB1AD9571B2AF5FF00ED924B /* ParkgatePigeons */,
 				BB1AD9711B2AF60100ED924B /* ParkgatePigeonsTests */,
 				BB1AD9561B2AF5FF00ED924B /* Products */,
@@ -81,9 +94,14 @@
 		BB1AD9571B2AF5FF00ED924B /* ParkgatePigeons */ = {
 			isa = PBXGroup;
 			children = (
+				BB1AD9881B2B25EC00ED924B /* pigeon-alive@2x.png */,
+				BB1AD9801B2B04B500ED924B /* background.png */,
+				BB1AD9811B2B04B500ED924B /* pigeon-alive.png */,
 				BB1AD95A1B2AF60000ED924B /* AppDelegate.swift */,
 				BB1AD95C1B2AF60000ED924B /* GameScene.sks */,
 				BB1AD95E1B2AF60000ED924B /* GameScene.swift */,
+				BB1AD9841B2B12CF00ED924B /* pigeon-dead-anim1.png */,
+				BB1AD9851B2B12CF00ED924B /* pigeon-dead-anim2.png */,
 				BB1AD9601B2AF60000ED924B /* GameViewController.swift */,
 				BB1AD9621B2AF60000ED924B /* Main.storyboard */,
 				BB1AD9651B2AF60100ED924B /* Images.xcassets */,
@@ -199,9 +217,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1AD9691B2AF60100ED924B /* LaunchScreen.xib in Resources */,
+				BB1AD9871B2B12CF00ED924B /* pigeon-dead-anim2.png in Resources */,
+				BB1AD9861B2B12CF00ED924B /* pigeon-dead-anim1.png in Resources */,
+				BB1AD9831B2B04B500ED924B /* pigeon-alive.png in Resources */,
+				BB1AD9821B2B04B500ED924B /* background.png in Resources */,
 				BB1AD9661B2AF60100ED924B /* Images.xcassets in Resources */,
 				BB1AD95D1B2AF60000ED924B /* GameScene.sks in Resources */,
 				BB1AD9641B2AF60000ED924B /* Main.storyboard in Resources */,
+				BB1AD9891B2B25EC00ED924B /* pigeon-alive@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1AD95F1B2AF60000ED924B /* GameScene.swift in Sources */,
+				BB1AD97F1B2AF64500ED924B /* Pigeon.swift in Sources */,
 				BB1AD9611B2AF60000ED924B /* GameViewController.swift in Sources */,
 				BB1AD95B1B2AF60000ED924B /* AppDelegate.swift in Sources */,
 			);
