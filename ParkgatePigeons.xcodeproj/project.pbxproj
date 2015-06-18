@@ -21,6 +21,7 @@
 		BB1AD9861B2B12CF00ED924B /* pigeon-dead-anim1.png in Resources */ = {isa = PBXBuildFile; fileRef = BB1AD9841B2B12CF00ED924B /* pigeon-dead-anim1.png */; };
 		BB1AD9871B2B12CF00ED924B /* pigeon-dead-anim2.png in Resources */ = {isa = PBXBuildFile; fileRef = BB1AD9851B2B12CF00ED924B /* pigeon-dead-anim2.png */; };
 		BB1AD9891B2B25EC00ED924B /* pigeon-alive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB1AD9881B2B25EC00ED924B /* pigeon-alive@2x.png */; };
+		BB4DA0E11B32B4CE00BE46FF /* LevelSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DA0E01B32B4CE00BE46FF /* LevelSelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		BB1AD9841B2B12CF00ED924B /* pigeon-dead-anim1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pigeon-dead-anim1.png"; sourceTree = "<group>"; };
 		BB1AD9851B2B12CF00ED924B /* pigeon-dead-anim2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pigeon-dead-anim2.png"; sourceTree = "<group>"; };
 		BB1AD9881B2B25EC00ED924B /* pigeon-alive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pigeon-alive@2x.png"; sourceTree = "<group>"; };
+		BB4DA0E01B32B4CE00BE46FF /* LevelSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		BB1AD94C1B2AF5FF00ED924B = {
 			isa = PBXGroup;
 			children = (
+				BB4DA0E01B32B4CE00BE46FF /* LevelSelectViewController.swift */,
 				BB1AD97E1B2AF64500ED924B /* Pigeon.swift */,
 				BB1AD9571B2AF5FF00ED924B /* ParkgatePigeons */,
 				BB1AD9711B2AF60100ED924B /* ParkgatePigeonsTests */,
@@ -244,6 +247,7 @@
 			files = (
 				BB1AD95F1B2AF60000ED924B /* GameScene.swift in Sources */,
 				BB1AD97F1B2AF64500ED924B /* Pigeon.swift in Sources */,
+				BB4DA0E11B32B4CE00BE46FF /* LevelSelectViewController.swift in Sources */,
 				BB1AD9611B2AF60000ED924B /* GameViewController.swift in Sources */,
 				BB1AD95B1B2AF60000ED924B /* AppDelegate.swift in Sources */,
 			);
@@ -441,6 +445,7 @@
 				BB1AD97A1B2AF60100ED924B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB1AD97B1B2AF60100ED924B /* Build configuration list for PBXNativeTarget "ParkgatePigeonsTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +454,7 @@
 				BB1AD97D1B2AF60100ED924B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

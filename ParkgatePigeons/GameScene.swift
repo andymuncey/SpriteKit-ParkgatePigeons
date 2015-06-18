@@ -8,7 +8,16 @@
 
 import SpriteKit
 
+
+
+protocol PigeonSceneDelegate{
+    func level(level: Int, completed: Bool)
+}
+
 class GameScene: SKScene, PigeonDelegate {
+    
+    
+    var pigeonSceneDelegate: PigeonSceneDelegate?
     
     var seedInterval = 1.0
     var levelDuration = 10
@@ -44,6 +53,8 @@ class GameScene: SKScene, PigeonDelegate {
         levelLabel.position = CGPointMake(frame.width-10, 10)
         levelLabel.horizontalAlignmentMode = .Right
         addChild(levelLabel)
+    
+        seedInterval = 1.0 - Double(level)/100.0
         
         startGame()
     }
@@ -84,6 +95,9 @@ class GameScene: SKScene, PigeonDelegate {
         
         //combine durations
         var duration = randomduration + durationIncrement + 0.5
+        
+        /******Add duration for test *********/
+        duration += 1
         
         //determine flight movement on X axis
         var flightMotion : CGFloat =  frame.size.width + (2.0 * sprite.size.width)
@@ -149,6 +163,10 @@ class GameScene: SKScene, PigeonDelegate {
         if hits == pigeonCount{
             level++
             startGame()
+            pigeonSceneDelegate?.level(level, completed: true)
+        }
+        else{
+            pigeonSceneDelegate?.level(level, completed: false)
         }
         
     }

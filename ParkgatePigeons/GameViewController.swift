@@ -25,12 +25,40 @@ extension SKNode {
     }
 }
 
-class GameViewController: UIViewController {
 
+protocol GameViewControllerDelegate{
+    func level(level: Int, completed: Bool)
+}
+
+
+class GameViewController: UIViewController, PigeonSceneDelegate {
+
+    
+    var gameViewControllerDelegate: GameViewControllerDelegate?
+    
+    var level = 1
+    
+    func level(level: Int, completed: Bool) {
+        if !completed {
+            navigationController?.popViewControllerAnimated(true)
+        }
+       
+        gameViewControllerDelegate?.level(level, completed: completed)
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
 
         if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
+            
+            scene.pigeonSceneDelegate = self
+            scene.level = level
+            
             // Configure the view.
             let skView = self.view as! SKView
             skView.showsFPS = true
